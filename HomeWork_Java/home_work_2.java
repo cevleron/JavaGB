@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.System.Logger;
+import java.util.Arrays;
 import java.util.Scanner;
 
 // Реализуйте алгоритм сортировки пузырьком числового массива(введён вами),
@@ -56,7 +57,11 @@ public class home_work_2 {
         System.out.println(iScanner);
 
         while (iScanner.hasNextLine()) {
-            System.out.println(iScanner.nextLine());
+            String line = iScanner.nextLine();
+            // System.out.println(line);
+            String[] nums = line.split(" ");
+            System.out.println(Arrays.toString(nums));
+
         }
         fr.close();
     }
