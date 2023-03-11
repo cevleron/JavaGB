@@ -2,7 +2,9 @@ package HomeWork_Java;
 //Задача 1
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.System.Logger;
 import java.util.Arrays;
@@ -55,14 +57,28 @@ public class home_work_2 {
         FileReader fr = new FileReader("students.txt");
         Scanner iScanner = new Scanner(fr);
         System.out.println(iScanner);
+        StringBuilder bild = new StringBuilder();
+
+        // String texts = new String();
+        // texts = iScanner.nextLine();
+        // System.out.println(texts);
 
         while (iScanner.hasNextLine()) {
             String line = iScanner.nextLine();
             // System.out.println(line);
-            String[] nums = line.split(" ");
-            System.out.println(Arrays.toString(nums));
-
+            String[] nums = line.split("\"");
+            // System.out.println(Arrays.toString(nums));
+            bild.append("Студент ");
+            bild.append(nums[3]).append(" ").append("получил").append(" ");
+            bild.append(nums[7]).append(" ").append("по предмету").append(" ").append(nums[11]);
+            bild.append("\n");
         }
+
+        System.out.println(bild.toString());
+        FileWriter fw = new FileWriter("new_students.txt");
+        fw.write(bild.toString());
+
         fr.close();
+        fw.close();
     }
 }
