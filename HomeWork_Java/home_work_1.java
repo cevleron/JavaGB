@@ -1,6 +1,13 @@
-package HomeWork_Java;
+// package HomeWork_Java;
 
-import java.util.Scanner;
+// import java.io.IOException;
+// import java.lang.System.Logger;
+// import java.lang.System.Logger.Level;
+// import java.util.Scanner;
+// import java.util.logging.FileHandler;
+// import java.util.logging.SimpleFormatter;
+
+// import Lesson_03.main;
 
 // 1.Вычислить n-ое треугольного число(сумма чисел от 1 до n),а так же
 // n!(произведение чисел от 1 до n)
@@ -165,5 +172,28 @@ import java.util.Scanner;
 // }
 // System.out.println(message);
 // }
+// }
+// }
+
+// /**
+// * home_work_1
+// */
+// public class home_work_1 {
+
+// public static void main(String[] args) throws IOException {
+// Logger ll = Logger.getLogger(home_work_1.class.getName());
+// String logsPath = "log.txt";
+// FileHandler fh = new FileHandler(logsPath, true);
+// ll.addHandler(fh);
+// SimpleFormatter formatter = new SimpleFormatter();
+
+// fh.setFormatter(formatter);
+
+// for (int i = 0; i < 10; i++) {
+// ll.log(Level.INFO, "element" + i);
+// }
+// ll.log(Level.WARNING, "logger off");
+// ll.info("test");
+// ll.warning("logsPath");
 // }
 // }
