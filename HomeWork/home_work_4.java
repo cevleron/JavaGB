@@ -31,8 +31,6 @@
 //     • dequeue() — возвращает первый элемент из очереди и удаляет его,
 //     • first() — возвращает первый элемент из очереди, не удаляя.
 
-package HomeWork;
-
 import java.util.LinkedList;
 import java.util.Scanner;
 
